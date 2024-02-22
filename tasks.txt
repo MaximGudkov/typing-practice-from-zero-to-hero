@@ -1,0 +1,48 @@
+
+Creating a comprehensive set of advanced Python typing tasks is a great way to deepen your understanding and mastery of Python's typing system. These tasks will cover a broad range of topics, including generics, protocols, type guards, type inference, variance, and more, to challenge your skills and broaden your knowledge.
+
+Advanced Python Typing Tasks
+1. Generic Containers with Constraints
+Task: Implement a generic LimitedList class that only accepts numbers (int or float) and has a limit on the number of elements it can hold. Use type variables with bounds and constraints.
+
+2. Covariant and Contravariant Generics
+Task: Create a generic Processor class with a method process and demonstrate covariance and contravariance with respect to input and output types.
+
+3. Custom Type Guards
+Task: Write a custom type guard function is_numeric that can differentiate between numeric (int or float) and non-numeric types at runtime and use it to narrow types in a function that handles mixed-type lists.
+
+4. Advanced Protocols with Composition
+Task: Define two protocols, JsonSerializable and XmlSerializable, and a composite protocol DataSerializable that requires both JSON and XML serialization capabilities. Implement a class that adheres to DataSerializable.
+
+5. Typed Context Managers
+Task: Create a generic context manager class ResourcePool for managing resources like database connections. Use generics to make it adaptable to different resource types and annotate the __enter__ and __exit__ methods accordingly.
+
+6. Annotating Decorators that Change Signatures
+Task: Write a decorator that changes the signature of the decorated function (e.g., adds an additional argument or changes the return type) and correctly annotate the decorator using Callable.
+
+7. Type Inference with Generators
+Task: Implement a generator function fibonacci that yields an infinite sequence of Fibonacci numbers. Use type hints to indicate the generator's return type and utilize the function in a type-safe manner.
+
+8. Annotating Asynchronous Code
+Task: Annotate an asynchronous function fetch_data that retrieves data from an API and returns a parsed JSON response. Use Awaitable and asyncio.
+
+9. Variadic Generics (Python 3.11+)
+Task: Explore Python 3.11's variadic generics by creating a TupleConcatenator class that takes multiple tuples and provides a method to concatenate them. Use the new TypeVarTuple and Unpack constructs.
+
+10. Type Narrowing with Literal Types
+Task: Use Literal types to define a function configure_mode that accepts specific string literals ("light", "dark", or "auto") and configures an application's theme accordingly. Demonstrate type narrowing based on these literals.
+
+11. Advanced Union and Intersection Types
+Task: Create functions that demonstrate the use of advanced union and intersection type constructs to handle complex data structures that can be one of several types or must satisfy multiple type constraints simultaneously.
+
+12. Annotating Callbacks and Higher-Order Functions
+Task: Annotate a higher-order function apply_to_list that takes a list and a callback function, applies the callback to each element of the list, and returns a new list. Ensure type safety between the input list, callback, and output list.
+
+13. Structural Subtyping with TypedDict
+Task: Use TypedDict to create a type for a complex JSON structure expected from an API response. Write a function that accepts such a structure and safely extracts data from it.
+
+14. Annotating Recursive Functions and Data Structures
+Task: Create a recursive data structure (e.g., a binary tree) and a function that operates on it (e.g., searches for a value). Annotate both the data structure and the function to ensure type safety.
+
+15. Type Checking Dynamically Created Classes
+Task: Dynamically create a class (e.g., using type() or metaclasses) that includes type-annotated methods or properties. Demonstrate how to ensure these dynamic classes are type-checked.
